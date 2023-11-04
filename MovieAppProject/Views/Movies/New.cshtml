@@ -1,0 +1,19 @@
+﻿@model MovieAppProject.Models.Movie
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Movie</h2>
+@using (Html.BeginForm("Create", "Movie"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.mName);
+        @Html.TextBoxFor(m => m.mName, new { @class = "form-control" })
+    </div>
+
+
+}
+
+
+

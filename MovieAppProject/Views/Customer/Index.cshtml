@@ -1,0 +1,12 @@
+﻿
+@model IEnumerable<MovieAppProject.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var c in Model)
+{
+    <h1>@Html.ActionLink(c.CName, "Edit", "Customer", new { id = c.Id}, null) </h1>
+}
+

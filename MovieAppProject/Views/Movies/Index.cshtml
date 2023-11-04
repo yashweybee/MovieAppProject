@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MovieAppProject.Models.Movie>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+<a href="Movies/new" class="btn btn-primary">New Movies</a>
+
+@foreach (var mov in Model)
+            {
+                <h3>@Html.ActionLink(mov.mName, "Details", "Movies",new { id = mov.Id},null )</h3>
+            }
+

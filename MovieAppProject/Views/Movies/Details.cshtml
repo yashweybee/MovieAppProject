@@ -1,0 +1,9 @@
+﻿@model MovieAppProject.Models.Movie
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movie Details</h2>
+<h1>@Model.mName</h1>
+<p>Genre name : @Model.Genre.GrName</p>

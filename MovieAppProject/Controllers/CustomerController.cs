@@ -56,7 +56,6 @@ namespace MovieAppProject.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
-
             if (!ModelState.IsValid)
             {
                 var viewModel = new CustomerFormVIewModel
